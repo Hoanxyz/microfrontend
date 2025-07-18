@@ -3,14 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'mfe1',
+    path: '',
     loadChildren: () => import('mfe1/Module').then(m => m.Mfe1Module)
   },
   {
-    path: 'mfe2',
+    path: '',
     loadChildren: () => import('mfe2/Module').then(m => m.Mfe2Module)
-  },
-  { path: '', redirectTo: 'mfe1', pathMatch: 'full' }
+  }
 ];
 
 @NgModule({

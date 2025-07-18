@@ -12,6 +12,9 @@ import { HomeComponent } from './home/home.component';
   imports: [
     CommonModule,
     Mfe1RoutingModule
+  ],
+  exports: [
+    HomeComponent
   ]
 })
 export class Mfe1Module { }

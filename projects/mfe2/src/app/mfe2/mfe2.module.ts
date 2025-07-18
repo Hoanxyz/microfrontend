@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { Mfe2RoutingModule } from './mfe2-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import {expand} from "rxjs";
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   imports: [
     CommonModule,
     Mfe2RoutingModule
-  ]
+  ],
+  exports: [DashboardComponent]
 })
 export class Mfe2Module { }
